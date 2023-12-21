@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        margin: 5px;
+      }
+      .auth-success-screen.content-wrapper {
+        max-width: 275px;
+        margin: 0 auto 20px;
+        padding: 25px 0 25px 75px;
+      }
+      .content-wrapper {
+        background-color: #fff;
+        box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+      }
+      .footer-container {
+        padding: 25px;
+        border-top: 1px solid #f2f2f2;
+        text-align: center;
+      }
+      .screen {
+        margin-top: 150px;
+      }
+      .screen-heading {
+        margin-top: 0;
+      }
+      .success-check {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        min-width: 80px;
+        border-radius: 50px;
+        background-color: #57d38f;
+        border: 1px solid #31b06a;
+      }
+      img {
+        margin-left: -100px;
+        width: 500px;
+        height: 150px;
+        margin-bottom: 5px;
+      }
+      .Large {
+        background-color: black;
+        color: white;
+        width: 250px;
+        height: 50px;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loginSuccess" class="screen">
+      <div class="auth-success-screen content-wrapper">
+        <img src="inc.png" class="content-wrapper" alt="" />
+        <button id="id01" class="my-5 Large">Try Again</button>
+        <button id="id02" class="my-5 Large">Go To Home</button>
+      </div>
+
+      <div class="footer-container">
+        <div class="content-wrapper">
+          <span class="help-link">{* textNeedHelp *}{* linkHelp *}</span>
+          <div class="footer-text">{* textFooter *}</div>
+          <div class="footer-extra-text">{* textFooterExtra *}</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("id01").onclick = function () {
+        window.location.href = "login";
+      };
+      document.getElementById("id02").onclick = function () {
+        window.location.href = "index";
+      };
+    </script>
+  </body>
+</html>

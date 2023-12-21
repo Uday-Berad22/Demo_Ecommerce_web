@@ -1,5 +1,5 @@
 function goToLoginPage() {
-  window.location.href = "login.html"; // Replace 'login.html' with the actual URL of your login page
+  window.location.href = "login"; // Replace 'login.html' with the actual URL of your login page
 }
 document
   .getElementById("loginForm")

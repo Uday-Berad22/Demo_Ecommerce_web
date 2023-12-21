@@ -147,12 +147,7 @@
   </head>
   <body>
     <div class="FormContainer">
-      <form
-        id="loginForm"
-        class="modal-content animate"
-        method="post"
-        action="/server.js"
-      >
+      <form id="loginForm" class="modal-content animate" method="post">
         <div class="imgcontainer">
           <span onclick="goToHomePage()" class="close" title="Close Modal"
             >&times;</span
@@ -177,8 +172,8 @@
             required
           />
 
-          <!-- <button type="submit" value="login">Login</button> -->
-          <input type="submit" value="login" />
+          <button type="submit" value="login">Login</button>
+          <!-- <input type="submit" value="login" /> -->
 
           <label>
             <input type="checkbox" checked="checked" name="remember" /> Remember
@@ -210,7 +205,7 @@
         }
       };
       function goToHomePage() {
-        window.location.href = "index.html"; // Replace 'login.html' with the actual URL of your login page
+        window.location.href = "index"; // Replace 'login.html' with the actual URL of your login page
       }
     </script>
   </body>
